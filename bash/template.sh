@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # This is free and unencumbered software released into the public domain.
 #
 # Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -23,7 +25,6 @@
 #
 # For more information, please refer to <http://unlicense.org>
 
-#!/usr/bin/env bash
 set -euo pipefail
 IFS=$'\n\t'
 
