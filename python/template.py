@@ -120,6 +120,14 @@ def main(arguments):
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
 
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-g', '--get',
+                       help="get entry",
+                       type=str)
+    group.add_argument('-l', '--list',
+                       help="List entries",
+                       action="store_true")
+
     parser.add_argument('infile', nargs='?', help="input file",
                         default=sys.stdin, type=argparse.FileType('r'))
     parser.add_argument('-r', '--remote', help="the remote host name or IP address", type=str, required=True)
