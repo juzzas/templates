@@ -190,7 +190,7 @@ def main(arguments):
     except KeyboardInterrupt:
         logger.debug("quit")
         
-    except RuntimeError, err:
+    except RuntimeError as err:
         logger.error(str(err))
         exit_code = 1
         
